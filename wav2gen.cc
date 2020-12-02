@@ -69,8 +69,8 @@ int main(int argc, char *argv[]) {
   try {
     const char *usage =
         "Get gender prediction.\n"
-        "Usage: wav2gen [options...] <model-path> <wav-rspecifier> <gen-pre>"
-        "<feats-wspecifier>\n";
+        "Usage: wav2gen [options...] <model-path> <wav-rspecifier> <gen-pre>\n"
+        "e.g.: wav2gen $model_path scp:$wav_scp ark,t:$result\n";
 
     ParseOptions po(usage);
     Timer timer;
